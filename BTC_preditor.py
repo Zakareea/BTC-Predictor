@@ -80,4 +80,4 @@ def future_prediction(days):
 	return btc_pred
 
 testing(x_test, y_test, model)
-prediction = future_prediction()
+prediction = future_prediction(60)
