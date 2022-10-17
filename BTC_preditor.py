@@ -59,7 +59,7 @@ def testing(x, y, nn):
 	ax.grid()
 	plt.show()
 
-#This function predict (single_pred) from the last 50 values from the data "close" and and push (single_pred) to the "close"
+#This function predicts (single_pred) given the last 50 values from the data "close" and and pushes (single_pred) to the "close"
 def future_predictor(close):
   last_close = close[len(close)-50 :]
   last_close = scale(last_close)
@@ -80,4 +80,4 @@ def future_prediction(days):
 	return btc_pred
 
 testing(x_test, y_test, model)
-prediction = future_prediction()
+prediction = future_prediction(60)
